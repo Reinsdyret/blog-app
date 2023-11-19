@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
+import {GetPosts} from './GetPosts';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Text>
               Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
             </Text>
+            
             <Link
               color="teal.500"
               href="https://chakra-ui.com"
@@ -32,7 +34,9 @@ function App() {
             >
               Learn Chakra
             </Link>
+            
           </VStack>
+          <GetPosts />
         </Grid>
       </Box>
     </ChakraProvider>
